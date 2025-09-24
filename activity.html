@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning CSS</title>
+</head>
+<style> 
+    body { margin:0; }
+    .rounded-img { border-radius: 10px; }
+    /* Header Box */
+    .header-box
+    {
+        background-color: #76ABAE;
+        width: 100%; height: 70px;
+        text-align: center; color: #222831;
+        font-size: 30px; font-family: arial;
+        font-weight: 700; padding-top: 30px;
+    }
+    /* Box for images */
+    .main-box
+    {
+        background-color: #222831; 
+        width: 100%; height: 400px;
+        padding: 30px;
+    }
+    .box-row
+    {
+        display: flex; justify-content: center;
+        flex-wrap: nowrap; gap: 20px;
+        overflow: auto;
+    }
+    .img-box
+    {
+        margin-top: 10px;
+        background-color: #31363F;
+        height: 350px; width: 370px;
+        border: 1px; border-style: solid;
+        text-align: center; font-family: arial;
+        color: #EEEEEE;
+    }
+    .img
+    {
+        width: 300px; margin-top: 25px;
+        border-radius: 10px;
+    }
+    .footer-box
+    {
+        background-color: #EEEEEE;
+        width: 100%; height: 40px;
+        text-align: center; color: #222831;
+        font-size: 12px; font-family: arial;
+        padding-top: 20px;
+    }
+    /* For Fonts */
+    .large-text
+    {
+        font-weight: 700; font-family: arial;
+        font-size: 25px; color: #EEEEEE; 
+        font-family: arial;
+    }
+    .medium-text
+    {
+        font-family: arial; font-size: 15px;
+        color: #EEEEEE;
+    }
+</style>
+<body style="background-color: #31363F">
+    <!--Header Box Section-->
+    <div class="header-box">Welcome to My Website</div>
+
+    <!--Body Section-->
+    <div style="text-align: center; margin: 40px;">
+    <img src="./main_img.jpg" alt="Learning" width="400px" class="rounded-img">
+    <p class="large-text">Learn CSS Easily</p>
+    <p class="medium-text">Master the art of styling with hands-on projects.</p>
+    </div>
+
+    <!--Main Box-->
+    <div class="main-box">
+        <div class="box-row">
+            <div class="img-box">
+            <img class="img" src="./img1.jpg" alt="lessons">
+            <h3 style="color: #76ABAE;">Interactive Lessons</h3>
+            <p>Engage with exercises and real-world examples.</p>
+            </div>
+            
+            <div class="img-box">
+            <img class="img" src="./img2.jpg" alt="steps">
+            <h3 style="color: #76ABAE;">Step by Step</h3>
+            <p>Follow simple steps to understands CSS concepts.</p>
+            </div>
+
+            <div class="img-box">
+            <img class="img" src="./img3.jpg" alt="build">
+            <h3 style="color: #76ABAE;">Build Projects</h3>
+            <p>Apply your knowlede to create real landing pages.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-box">©2025 My Landing Page Project</div>
+</body>
+</html>
